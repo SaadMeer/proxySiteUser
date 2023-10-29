@@ -56,9 +56,11 @@ input {
 input::placeholder {
     color: white;
 }
+
 textarea::placeholder {
     color: white;
 }
+
 input:focus {
     outline: none;
     color: white;
@@ -66,11 +68,15 @@ input:focus {
 
 .white-text {
     color: white;
-  }
+}
 
 
 .minHeadClr {
     color: #AEB9E1;
+}
+
+.lightClr {
+    color: #343B4F;
 }
 
 .mainLightBg {
@@ -80,56 +86,97 @@ input:focus {
 .mainDarkBg {
     background-color: #080F25;
 }
-.mainLightBorder{
+
+.mainLightBorder {
     border: 1px solid #343B4F;
 }
-.mainLightBorder-bottom{
+
+.bg2:hover {
+    background-color: #343B4F;
+}
+
+.bg3 {
+    background-color: #6C72FF;
+}
+
+.clr1 {
+    color: #37446B;
+}
+
+.mainLightBorder-bottom {
     border-bottom: 1px solid #37446B;
 }
-.bgGreen{
+
+.bg4 {
+    background-color: #37446B;
+}
+
+.mainLightBorder-TopBotom {
+    border-bottom: 1px solid #37446B;
+    border-top: 1px solid #37446B;
+
+}
+
+.bgGreen {
     background: rgba(5, 193, 104, 0.20);
 }
-.borderGreen{
+
+.borderGreen {
     border: 1px solid rgba(5, 193, 104, 0.20);
 }
-.clrGreen{
+
+.clrGreen {
     color: #14CA74;
 }
-.bgdarkGreen{
+
+.bgdarkGreen {
     background-color: #14CA74;
 }
 
 
 
-.bgred{
+.bgred {
     background: rgba(255, 90, 101, 0.20);
 }
-.borderred{
+
+.borderred {
     border: 1px solid rgba(255, 90, 101, 0.20);
 }
-.clrred{
+
+.clrred {
     color: #FF5A65;
 }
-.bgdarkred{
+
+.bgdarkred {
     background-color: #FF5A65;
 }
 
 
 
 
-.bgyellow{
+.bgyellow {
     background: rgba(255, 176, 22, 0.20);
 }
-.borderyellow{
+
+.borderyellow {
     border: 1px solid rgba(255, 176, 22, 0.20);
 }
-.clryellow{
+
+.clryellow {
     color: #FDB52A;
 }
-.bgdarkyellow{
+
+.bgdarkyellow {
     background-color: #FDB52A;
 }
 
+.height90 {
+    height: 90vh;
+}
+
+.p60 {
+    padding: 20px;
+}
 
 body {
     background-color: var(--white);
@@ -650,3 +697,44 @@ body {
 }
 
 /* Generator Screen End */
+.pricing-card:hover {
+    background: #6C72FF;
+    transition: 0.5s ease-in-out;
+}
+
+.pricing-card:hover svg .path1 {
+    fill: #fff;
+}
+
+.pricing-card:hover svg .path2 {
+    fill: #fff;
+}
+
+.pricing-card:hover a {
+    background: #080F25;
+}
+
+.leftTopBorder {
+    border-radius: 12px 0px 0px 0px;
+}
+
+.rightTopBorder {
+    border-radius: 0px 12px 0px 0px;
+}
+
+.leftBottomBorder {
+    border-radius: 0px 0px 0px 12px;
+}
+
+.rightBottomBorder {
+    border-radius: 0px 0px 12px 0px;
+}
+
+.bgandShadow {
+    background: linear-gradient(236deg, #101935 44.24%, rgba(16, 25, 53, 0.00) 111.4%) !important;
+    box-shadow: 0px 2px 7px 0px rgba(20, 20, 43, 0.06) !important;
+}
+
+.adminNav-pill-bg {
+    border: 1px solid #343B4F;
+}
