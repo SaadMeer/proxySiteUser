@@ -111,6 +111,11 @@ input:focus {
     background-color: #37446B;
 }
 
+
+.logout-btn{
+    padding: 5px;
+}
+
 .mainLightBorder-TopBotom {
     border-bottom: 1px solid #37446B;
     border-top: 1px solid #37446B;
@@ -332,7 +337,9 @@ body {
 .dash-li-name {
     margin: 2px 0px 0px 5px;
 }
-
+.bg6 {
+    background-color: #37446B;
+}
 .bottomUser-box {
     position: absolute;
     bottom: 0;
@@ -342,7 +349,6 @@ body {
 }
 
 .bottomUser-box a {
-    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
