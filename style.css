@@ -770,6 +770,64 @@ body {
     display: none;
 }
 
+
+.progress-1 {
+    position: relative;
+    margin: 4px;
+    float: left;
+    text-align: center;
+    color: #FFF;
+    font-size: 36px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.barOverflow-1 {
+    /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden;
+    /* Comment this line to understand the trick */
+    width: 250px;
+    height: 105px;
+    /* Half circle (overflow) */
+    margin-bottom: -44px;
+    /* bring the numbers up */
+}
+
+.bar-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 15px solid #6C72FF;
+    /* half gray, */
+    border-bottom-color: #37446B;
+    /* half azure */
+    border-right-color: #37446B;
+}
+.progress-1 span {
+    color: #FFF;
+    font-size: 36px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+}
+.progress-1 p{
+    padding-top: 10px;
+}
+.bg5 {
+    background-color: #212C4D;
+}
+
+
+
 @media only screen and (max-width: 990px) {
     .right-content-innerBox {
         width: 100%;
