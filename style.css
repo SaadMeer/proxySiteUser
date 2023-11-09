@@ -98,15 +98,25 @@ input:focus {
 .bg3 {
     background-color: #6C72FF;
 }
+
 .bg7 {
     background-color: #9A91FB !important;
 }
+
 .bg8 {
     background-color: #57C3FF !important;
 }
 
 .clr1 {
     color: #37446B;
+}
+
+#checkbox-1:checked {
+    background-color: transparent;
+}
+
+#checkbox-1:focus {
+    outline: none;
 }
 
 .mainLightBorder-bottom {
@@ -118,7 +128,7 @@ input:focus {
 }
 
 
-.logout-btn{
+.logout-btn {
     padding: 5px;
 }
 
@@ -343,9 +353,11 @@ body {
 .dash-li-name {
     margin: 2px 0px 0px 5px;
 }
+
 .bg6 {
     background-color: #37446B;
 }
+
 .bottomUser-box {
     position: absolute;
     bottom: 0;
@@ -742,23 +754,31 @@ body {
 .pricing-card:hover a {
     background: #080F25;
 }
-.pricing-card-active{
+
+.pricing-card-active {
     background: #080F25;
     fill: #fff;
     fill: #fff;
     background: #6C72FF;
     transition: 0.5s ease-in-out;
 }
+
 .pricing-card-active svg .path1 {
     fill: #fff;
 }
+
 .pricing-card-active svg .path2 {
     fill: #fff;
 }
-.best-price-img{
-    position: absolute;
+
+.best-price-img {
+    /* position: absolute; */
+    position: relative;
     margin-top: -60px;
     margin-left: 100px;
+}
+.mtop{
+    margin-top: 25px;
 }
 
 .leftTopBorder {
@@ -836,6 +856,7 @@ body {
     /* half azure */
     border-right-color: #6C72FF;
 }
+
 .progress-1 span {
     color: #FFF;
     font-size: 30px;
@@ -844,13 +865,65 @@ body {
     font-weight: 600;
     line-height: 16px;
 }
-.progress-1 p{
+
+.progress-1 p {
     padding-top: 10px;
 }
+
 .bg5 {
     background-color: #212C4D;
 }
 
+
+.rightContentPriceScroll {
+    max-height: 100vh;
+    overflow: auto;
+    display: block;
+}
+.rightContentInvoiceScroll {
+    max-height: 77vh;
+    overflow: auto;
+    display: block;
+}
+.rightContentWalletScroll {
+    max-height: 290px;
+    overflow: auto;
+    display: block;
+}
+
+.tbodyScroll {
+    max-height: 350px;
+    overflow: auto;
+    display: block;
+}
+
+.tbodyScroll,.rightContentWalletScroll::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 30%;
+}
+
+.tbodyScroll,.rightContentWalletScroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.tbodyScroll,.rightContentWalletScroll::-webkit-scrollbar-thumb {
+    background: #37446B;
+    height: 100px;
+}
+
+.rightContentInvoiceScroll::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 30%;
+}
+
+.rightContentInvoiceScroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.rightContentInvoiceScroll::-webkit-scrollbar-thumb {
+    background: #37446b9f;
+    height: 100px;
+}
 
 
 @media only screen and (max-width: 990px) {
@@ -886,10 +959,11 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
-    .right-content-section-checkout{
+    .right-content-section-checkout {
         margin-top: 50px;
         padding-bottom: 100px;
     }
+
     .mob-header {
         display: flex;
     }
@@ -928,7 +1002,8 @@ body {
         justify-content: center;
         align-items: center;
     }
-    .priceone2Inner{
+
+    .priceone2Inner {
         margin-top: 20px;
     }
 
