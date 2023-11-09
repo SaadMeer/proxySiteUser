@@ -736,6 +736,24 @@ body {
 .pricing-card:hover a {
     background: #080F25;
 }
+.pricing-card-active{
+    background: #080F25;
+    fill: #fff;
+    fill: #fff;
+    background: #6C72FF;
+    transition: 0.5s ease-in-out;
+}
+.pricing-card-active svg .path1 {
+    fill: #fff;
+}
+.pricing-card-active svg .path2 {
+    fill: #fff;
+}
+.best-price-img{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 100px;
+}
 
 .leftTopBorder {
     border-radius: 12px 0px 0px 0px;
@@ -805,11 +823,11 @@ body {
     /* full circle! */
     border-radius: 50%;
     box-sizing: border-box;
-    border: 15px solid #6C72FF;
+    border: 15px solid #37446B;
     /* half gray, */
-    border-bottom-color: #37446B;
+    border-bottom-color: #6C72FF;
     /* half azure */
-    border-right-color: #37446B;
+    border-right-color: #6C72FF;
 }
 .progress-1 span {
     color: #FFF;
