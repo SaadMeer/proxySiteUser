@@ -98,6 +98,12 @@ input:focus {
 .bg3 {
     background-color: #6C72FF;
 }
+.bg7 {
+    background-color: #9A91FB !important;
+}
+.bg8 {
+    background-color: #57C3FF !important;
+}
 
 .clr1 {
     color: #37446B;
@@ -799,6 +805,7 @@ body {
     text-align: center;
     font-style: normal;
     font-weight: 600;
+    font-size: 30px;
     line-height: 16px;
 }
 
@@ -831,7 +838,7 @@ body {
 }
 .progress-1 span {
     color: #FFF;
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
     font-style: normal;
     font-weight: 600;
