@@ -132,6 +132,10 @@ input:focus {
     padding: 5px;
 }
 
+.logout-btn-none {
+    display: none;
+}
+
 .mainLightBorder-TopBotom {
     border-bottom: 1px solid #37446B;
     border-top: 1px solid #37446B;
@@ -227,7 +231,7 @@ body {
 .hide-sidebar {
     width: 86px;
     transition: 0.3s ease-in-out;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .logo-section {
@@ -271,7 +275,7 @@ body {
     position: absolute;
     transform: rotate(180deg);
     transition: var(--transition-half-s);
-    left: 90px;
+    left: 60px;
 }
 
 .logoname {
@@ -307,6 +311,7 @@ body {
 }
 
 .sidebar-li {
+    position: relative;
     margin-top: 4px;
     border-radius: 8px;
     transition: var(-transition-half-s);
@@ -353,6 +358,145 @@ body {
 .dash-li-name {
     margin: 2px 0px 0px 5px;
 }
+/* SideBar Hover Content */
+.dash-li-name-show-1::after {
+    content: "Dashboard";
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #101935;
+    padding: 5px 15px;
+    border: 1px solid #37446B;
+    border-radius: 10px;    
+    z-index: 999;
+    color: #939ca5;
+    overflow: visible;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.dash-li-name-show-1:hover::after {
+    display: block;
+    z-index: 999;
+    color: #939ca5;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.dash-li-name-show-2::after {
+    content: "Pricing";
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #101935;
+    padding: 5px 15px;
+    border: 1px solid #37446B;
+    border-radius: 10px;    
+    z-index: 999;
+    color: #939ca5;
+    overflow: visible;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.dash-li-name-show-2:hover::after {
+    display: block;
+    z-index: 999;
+    color: #939ca5;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+.dash-li-name-show-3::after {
+    content: "Proxy Generator";
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #101935;
+    padding: 5px 15px;
+    width: 132px;
+    border: 1px solid #37446B;
+    border-radius: 10px;    
+    z-index: 999;
+    color: #939ca5 !important;
+    overflow: visible;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.dash-li-name-show-3:hover::after {
+    display: block;
+    z-index: 999;
+    color: #939ca5;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.dash-li-name-show-4::after {
+    content: "Orders";
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #101935;
+    padding: 5px 15px;
+    border: 1px solid #37446B;
+    border-radius: 10px;    
+    z-index: 999;
+    color: #939ca5 !important;
+    overflow: visible;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.dash-li-name-show-4:hover::after {
+    display: block;
+    z-index: 999;
+    color: #939ca5;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+.dash-li-name-show-5::after {
+    content: "Invoices";
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    font-size: 12px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #101935;
+    padding: 5px 15px;
+    border: 1px solid #37446B;
+    border-radius: 10px;    
+    z-index: 999;
+    color: #939ca5 !important;
+    overflow: visible;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.dash-li-name-show-5:hover::after {
+    display: block;
+    z-index: 999;
+    color: #939ca5;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+/* SideBar Hover Content */
+
+
+
 
 .bg6 {
     background-color: #37446B;
@@ -777,7 +921,8 @@ body {
     margin-top: -60px;
     margin-left: 100px;
 }
-.mtop{
+
+.mtop {
     margin-top: 25px;
 }
 
@@ -880,11 +1025,13 @@ body {
     overflow: auto;
     display: block;
 }
+
 .rightContentInvoiceScroll {
-    max-height: 77vh;
+    height: 77vh;
     overflow: auto;
     display: block;
 }
+
 .rightContentWalletScroll {
     max-height: 290px;
     overflow: auto;
@@ -897,16 +1044,30 @@ body {
     display: block;
 }
 
-.tbodyScroll,.rightContentWalletScroll::-webkit-scrollbar {
+.tbodyScroll::-webkit-scrollbar {
     width: 3px;
     border-radius: 30%;
 }
 
-.tbodyScroll,.rightContentWalletScroll::-webkit-scrollbar-track {
+.rightContentWalletScroll::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 30%;
+}
+
+.tbodyScroll::-webkit-scrollbar-track {
     background: transparent;
 }
 
-.tbodyScroll,.rightContentWalletScroll::-webkit-scrollbar-thumb {
+rightContentWalletScroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.tbodyScroll::-webkit-scrollbar-thumb {
+    background: #37446B;
+    height: 100px;
+}
+
+.rightContentWalletScroll::-webkit-scrollbar-thumb {
     background: #37446B;
     height: 100px;
 }

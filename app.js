@@ -5,7 +5,15 @@ toggleBox.addEventListener('click', () => {
   const sidebarMain = document.querySelector('.sidebar-main-container');
   const sidebarSpan = document.querySelector('.sidebar-ul');
   const logoname = document.querySelector('.logoname');
+  const logBtn = document.querySelector('.logout-btn');
 
+  const dash1 = document.querySelector('.dash-li-1');
+  const dash2 = document.querySelector('.dash-li-2');
+  const dash3 = document.querySelector('.dash-li-3');
+  const dash4 = document.querySelector('.dash-li-4');
+  const dash5 = document.querySelector('.dash-li-5');
+
+  
   const bottomUserName = document.querySelector('.bottom-user-name');
   // const logoname = document.querySelector('.logoname');
 
@@ -14,14 +22,21 @@ toggleBox.addEventListener('click', () => {
   const sidebarli = document.querySelectorAll('.sidebar-li');
   const spans = sidebarSpan.getElementsByTagName("span");
 
-
+  
   document.querySelector('.right-content-section').classList.toggle('right-content-section-flex')
   sidebarMain.classList.toggle("hide-sidebar");
   toggleBox.classList.toggle("toggle-box-container-show");
   logoname.classList.toggle("logonamehide");
   document.querySelector('.main-logo').style.marginLeft = '17px';
+  logBtn.classList.toggle('logout-btn-none');
   bottomUserName.classList.toggle("bottom-user-name-hide");
 
+  dash1.classList.toggle("dash-li-name-show-1");
+  dash2.classList.toggle("dash-li-name-show-2");
+  dash3.classList.toggle("dash-li-name-show-3");
+  dash4.classList.toggle("dash-li-name-show-4");
+  dash5.classList.toggle("dash-li-name-show-5");
+  
 
   for (let i = 0; i < spans.length; i++) {
     spans[i].classList.toggle("dislpay-none");
@@ -32,7 +47,6 @@ toggleBox.addEventListener('click', () => {
   }
   for (let i = 0; i < sidebarli.length; i++) {
     leftarrowMenu[i].classList.toggle("leftarrow-menu-hide");
-
   }
 
 })
