@@ -1038,7 +1038,9 @@ body {
     display: block;
 }
 
-
+.selected{
+    border: 2px solid #FFF;
+}
 
 .rightContentWalletScroll {
     max-height: 290px;

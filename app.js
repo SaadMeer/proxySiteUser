@@ -13,7 +13,7 @@ toggleBox.addEventListener('click', () => {
   const dash4 = document.querySelector('.dash-li-4');
   const dash5 = document.querySelector('.dash-li-5');
 
-  
+
   const bottomUserName = document.querySelector('.bottom-user-name');
   // const logoname = document.querySelector('.logoname');
 
@@ -22,7 +22,7 @@ toggleBox.addEventListener('click', () => {
   const sidebarli = document.querySelectorAll('.sidebar-li');
   const spans = sidebarSpan.getElementsByTagName("span");
 
-  
+
   document.querySelector('.right-content-section').classList.toggle('right-content-section-flex')
   sidebarMain.classList.toggle("hide-sidebar");
   toggleBox.classList.toggle("toggle-box-container-show");
@@ -36,7 +36,7 @@ toggleBox.addEventListener('click', () => {
   dash3.classList.toggle("dash-li-name-show-3");
   dash4.classList.toggle("dash-li-name-show-4");
   dash5.classList.toggle("dash-li-name-show-5");
-  
+
 
   for (let i = 0; i < spans.length; i++) {
     spans[i].classList.toggle("dislpay-none");
@@ -61,6 +61,19 @@ function toggleSidebar() {
   }
 }
 
+// CheckOut Select
+const checkoutSelects = document.querySelectorAll('.checkoutSelect');
+let selectedCheckout = null;
+
+checkoutSelects.forEach((select) => {
+  select.addEventListener('click', () => {
+    if (selectedCheckout) {
+      selectedCheckout.classList.remove('selected');
+    }
+    select.classList.add('selected');
+    selectedCheckout = select;
+  });
+});
 
 $(".progress-1").each(function () {
 
@@ -80,3 +93,5 @@ $(".progress-1").each(function () {
     }
   });
 });
+
+
