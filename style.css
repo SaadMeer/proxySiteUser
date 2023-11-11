@@ -83,6 +83,10 @@ input:focus {
     background-color: #101935;
 }
 
+.mainLightBg1 {
+    background-color: #080f25;
+}
+
 .mainDarkBg {
     background-color: #080F25;
 }
@@ -292,7 +296,6 @@ body {
 
 .bottom-user-name-hide {
     display: none;
-
 }
 
 /* 
@@ -358,6 +361,7 @@ body {
 .dash-li-name {
     margin: 2px 0px 0px 5px;
 }
+
 /* SideBar Hover Content */
 .dash-li-name-show-1::after {
     content: "Dashboard";
@@ -371,13 +375,14 @@ body {
     background-color: #101935;
     padding: 5px 15px;
     border: 1px solid #37446B;
-    border-radius: 10px;    
+    border-radius: 10px;
     z-index: 999;
     color: #939ca5;
     overflow: visible;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
+
 .dash-li-name-show-1:hover::after {
     display: block;
     z-index: 999;
@@ -398,13 +403,14 @@ body {
     background-color: #101935;
     padding: 5px 15px;
     border: 1px solid #37446B;
-    border-radius: 10px;    
+    border-radius: 10px;
     z-index: 999;
     color: #939ca5;
     overflow: visible;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
+
 .dash-li-name-show-2:hover::after {
     display: block;
     z-index: 999;
@@ -412,6 +418,7 @@ body {
     opacity: 1;
     transition: 0.5s ease-in-out;
 }
+
 .dash-li-name-show-3::after {
     content: "Proxy Generator";
     display: none;
@@ -425,13 +432,14 @@ body {
     padding: 5px 15px;
     width: 132px;
     border: 1px solid #37446B;
-    border-radius: 10px;    
+    border-radius: 10px;
     z-index: 999;
     color: #939ca5 !important;
     overflow: visible;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
+
 .dash-li-name-show-3:hover::after {
     display: block;
     z-index: 999;
@@ -452,13 +460,14 @@ body {
     background-color: #101935;
     padding: 5px 15px;
     border: 1px solid #37446B;
-    border-radius: 10px;    
+    border-radius: 10px;
     z-index: 999;
     color: #939ca5 !important;
     overflow: visible;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
+
 .dash-li-name-show-4:hover::after {
     display: block;
     z-index: 999;
@@ -466,6 +475,7 @@ body {
     opacity: 1;
     transition: 0.5s ease-in-out;
 }
+
 .dash-li-name-show-5::after {
     content: "Invoices";
     display: none;
@@ -478,13 +488,14 @@ body {
     background-color: #101935;
     padding: 5px 15px;
     border: 1px solid #37446B;
-    border-radius: 10px;    
+    border-radius: 10px;
     z-index: 999;
     color: #939ca5 !important;
     overflow: visible;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
+
 .dash-li-name-show-5:hover::after {
     display: block;
     z-index: 999;
@@ -729,6 +740,7 @@ body {
 .Overview-mainInner-box2 h2 {
     padding-left: 14px;
 }
+
 
 .table {
     width: 100%;
@@ -1026,11 +1038,7 @@ body {
     display: block;
 }
 
-.rightContentInvoiceScroll {
-    height: 77vh;
-    overflow: auto;
-    display: block;
-}
+
 
 .rightContentWalletScroll {
     max-height: 290px;
@@ -1058,7 +1066,7 @@ body {
     background: transparent;
 }
 
-rightContentWalletScroll::-webkit-scrollbar-track {
+.rightContentWalletScroll::-webkit-scrollbar-track {
     background: transparent;
 }
 
@@ -1082,6 +1090,32 @@ rightContentWalletScroll::-webkit-scrollbar-track {
 }
 
 .rightContentInvoiceScroll::-webkit-scrollbar-thumb {
+    background: #37446b9f;
+    height: 100px;
+}
+
+
+/* .rightContentInvoiceScroll {
+    height: 20vh;
+    overflow-y: auto;
+    display: block;
+} */
+
+.fixTableHead {
+    overflow-y: auto;
+    height: 400px;
+}
+
+.fixTableHead::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 30%;
+}
+
+.fixTableHead::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.fixTableHead::-webkit-scrollbar-thumb {
     background: #37446b9f;
     height: 100px;
 }

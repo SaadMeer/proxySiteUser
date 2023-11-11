@@ -51,7 +51,7 @@
 
             <div class="sidebar-menu-section">
                 <ul class="sidebar-ul">
-                    <li class="sidebar-li dash-li-1 active">
+                    <li class="sidebar-li dash-li-1">
                         <a href="index.html">
                             <span class="dash-li ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 14 14"
@@ -127,7 +127,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="sidebar-li dash-li-5">
+                    <li class="sidebar-li dash-li-5 active">
                         <a href="invoices.html">
                             <span class="dash-li">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 10 14"
@@ -201,7 +201,7 @@
                 <h3>Invoices</h3>
                 <p>Thank you for using ProxyHaze</p>
 
-                <div class="relative mainLightBg rounded-xl mt-6 pt-2 rightContentInvoiceScroll">
+                <div class="relative mainLightBg rounded-xl mt-6 pt-2 table-wrp block ">
                     <div class="flex justify-between items-center px-8 pb-5 pt-3">
                         <h5 class="text-xl text-white font-semibold">My Invoices</h5>
                         <div class="relative flex max-w-sm rounded-lg bg5 mt-5 mr-5 w-36 mainLightBorder">
@@ -219,288 +219,296 @@
                         </div>
                     </div>
 
-                    <table class="w-full text-sm text-left text-white-500 dark:text-white">
-                        <thead class="text-xs text-white-700 uppercase">
-                            <tr class="mainLightBorder-bottom">
-                                <th scope="col" class="p-3 px-8 text-left text-white">
-                                    Invoice ID
-                                </th>
-                                <th scope="col" class="p-3 text-center flex items-center text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="11" height="10"
-                                        viewBox="0 0 11 10" fill="none">
-                                        <g clip-path="url(#clip0_37_442)">
-                                            <mask id="mask0_37_442" style="mask-type:luminance"
-                                                maskUnits="userSpaceOnUse" x="0" y="0" width="11" height="10">
-                                                <path d="M10.6899 0H0.689941V10H10.6899V0Z" fill="white" />
-                                            </mask>
-                                            <g mask="url(#mask0_37_442)">
-                                                <path
-                                                    d="M1.36389 8.74212C1.36389 7.21036 2.60563 5.96863 4.13738 5.96863H7.24244C8.77419 5.96863 10.0159 7.21036 10.0159 8.74212C10.0159 9.25271 9.60202 9.66662 9.09143 9.66662H2.28839C1.7778 9.66662 1.36389 9.25271 1.36389 8.74212Z"
-                                                    fill="#AEB9E1" />
-                                                <path
-                                                    d="M5.69153 5.26403C7.0531 5.26403 8.15686 4.16027 8.15686 2.7987C8.15686 1.43714 7.0531 0.333374 5.69153 0.333374C4.32997 0.333374 3.2262 1.43714 3.2262 2.7987C3.2262 4.16027 4.32997 5.26403 5.69153 5.26403Z"
-                                                    fill="#AEB9E1" />
-                                            </g>
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_37_442">
-                                                <rect width="10" height="10" fill="white"
-                                                    transform="translate(0.689941)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                    Product
-                                </th>
-                                <th scope="col" class="p-3 text-center text-white">
-                                    <span class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="13" height="12"
-                                            viewBox="0 0 13 12" fill="none">
-                                            <g clip-path="url(#clip0_37_453)">
-                                                <mask id="mask0_37_453" style="mask-type:luminance"
-                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="12">
-                                                    <path d="M12.22 0H0.219971V12H12.22V0Z" fill="white" />
-                                                </mask>
-                                                <g mask="url(#mask0_37_453)">
-                                                    <path
-                                                        d="M9.75462 1.87891H2.68506C2.13277 1.87891 1.68506 2.32662 1.68506 2.87891V10C1.68506 10.5523 2.13277 11 2.68506 11H9.75462C10.3069 11 10.7546 10.5523 10.7546 10V2.87891C10.7546 2.32662 10.3069 1.87891 9.75462 1.87891Z"
-                                                        stroke="#AEB9E1" />
-                                                    <path
-                                                        d="M1.68506 4.92712H10.7547V9.99925C10.7547 10.5515 10.3069 10.9992 9.75462 10.9992H2.68506C2.13277 10.9992 1.68506 10.5515 1.68506 9.99925V4.92712Z"
-                                                        fill="#AEB9E1" stroke="#AEB9E1" />
-                                                    <path d="M8.73584 1V2.65369" stroke="#AEB9E1" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path d="M3.7749 1V2.65369" stroke="#AEB9E1" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_37_453">
-                                                    <rect width="12" height="12" fill="white"
-                                                        transform="translate(0.219971)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        Date
-                                    </span>
-                                </th>
-                                <th scope="col" class="p-3 text-center text-white">
-                                    <span class="flex items-center">
+
+
+                    <div class="fixTableHead">
+
+                        <table class="w-full text-sm text-left text-white-500 dark:text-white">
+
+                            <thead class="text-xs text-white-700 uppercase sticky top-0">
+                                <tr class="mainLightBorder-bottom mainLightBg1">
+                                    <th scope="col" class="sticky top-0 p-3 px-8 text-left text-white">
+                                        Invoice ID
+                                    </th>
+                                    <th scope="col" class="sticky top-0 p-3 text-center flex items-center text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="11" height="10"
                                             viewBox="0 0 11 10" fill="none">
-                                            <g clip-path="url(#clip0_37_466)">
-                                                <mask id="mask0_37_466" style="mask-type:luminance"
+                                            <g clip-path="url(#clip0_37_442)">
+                                                <mask id="mask0_37_442" style="mask-type:luminance"
                                                     maskUnits="userSpaceOnUse" x="0" y="0" width="11" height="10">
-                                                    <path d="M10.8401 0H0.840088V10H10.8401V0Z" fill="white" />
+                                                    <path d="M10.6899 0H0.689941V10H10.6899V0Z" fill="white" />
                                                 </mask>
-                                                <g mask="url(#mask0_37_466)">
+                                                <g mask="url(#mask0_37_442)">
                                                     <path
-                                                        d="M10.0068 0H1.67342C1.45241 0 1.24045 0.0877973 1.08417 0.244078C0.927885 0.400358 0.840088 0.61232 0.840088 0.833333V9.16667C0.840088 9.38768 0.927885 9.59964 1.08417 9.75592C1.24045 9.9122 1.45241 10 1.67342 10H10.0068C10.2278 10 10.4397 9.9122 10.596 9.75592C10.7523 9.59964 10.8401 9.38768 10.8401 9.16667V0.833333C10.8401 0.61232 10.7523 0.400358 10.596 0.244078C10.4397 0.0877973 10.2278 0 10.0068 0ZM8.41821 4.05208L5.36613 6.96875C5.28723 7.04298 5.18279 7.084 5.07447 7.08333C4.96773 7.08374 4.86502 7.04265 4.78801 6.96875L3.26196 5.51042C3.21964 5.47349 3.18522 5.42838 3.16076 5.37781C3.13631 5.32724 3.12234 5.27225 3.11969 5.21614C3.11703 5.16003 3.12575 5.10396 3.14532 5.05131C3.16488 4.99866 3.19489 4.9505 3.23355 4.90974C3.2722 4.86898 3.31869 4.83646 3.37023 4.81413C3.42177 4.79179 3.4773 4.78011 3.53347 4.77979C3.58964 4.77946 3.6453 4.7905 3.69709 4.81223C3.74889 4.83396 3.79576 4.86594 3.83488 4.90625L5.07447 6.08854L7.8453 3.44792C7.92631 3.37723 8.03152 3.3406 8.13891 3.34568C8.24631 3.35077 8.34758 3.39716 8.42157 3.47518C8.49555 3.5532 8.53651 3.65679 8.53588 3.76431C8.53526 3.87182 8.4931 3.97493 8.41821 4.05208Z"
+                                                        d="M1.36389 8.74212C1.36389 7.21036 2.60563 5.96863 4.13738 5.96863H7.24244C8.77419 5.96863 10.0159 7.21036 10.0159 8.74212C10.0159 9.25271 9.60202 9.66662 9.09143 9.66662H2.28839C1.7778 9.66662 1.36389 9.25271 1.36389 8.74212Z"
+                                                        fill="#AEB9E1" />
+                                                    <path
+                                                        d="M5.69153 5.26403C7.0531 5.26403 8.15686 4.16027 8.15686 2.7987C8.15686 1.43714 7.0531 0.333374 5.69153 0.333374C4.32997 0.333374 3.2262 1.43714 3.2262 2.7987C3.2262 4.16027 4.32997 5.26403 5.69153 5.26403Z"
                                                         fill="#AEB9E1" />
                                                 </g>
                                             </g>
                                             <defs>
-                                                <clipPath id="clip0_37_466">
+                                                <clipPath id="clip0_37_442">
                                                     <rect width="10" height="10" fill="white"
-                                                        transform="translate(0.840088)" />
+                                                        transform="translate(0.689941)" />
                                                 </clipPath>
                                             </defs>
                                         </svg>
-                                        Status
-                                    </span>
-
-                                </th>
-                                <th scope="col" class="p-3 text-center text-white">
-                                    <span class="flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="11" height="10"
-                                            viewBox="0 0 11 10" fill="none">
-                                            <g clip-path="url(#clip0_37_476)">
-                                                <mask id="mask0_37_476" style="mask-type:luminance"
-                                                    maskUnits="userSpaceOnUse" x="0" y="0" width="11" height="10">
-                                                    <path d="M10.45 0H0.449951V10H10.45V0Z" fill="white" />
-                                                </mask>
-                                                <g mask="url(#mask0_37_476)">
-                                                    <path
-                                                        d="M5.45045 0C4.40885 0.00118162 3.41025 0.415479 2.67373 1.152C1.93721 1.88852 1.52291 2.88712 1.52173 3.92872C1.52173 7.29046 5.09329 9.83074 5.24509 9.93789C5.30592 9.97839 5.37737 10 5.45045 10C5.52353 10 5.59498 9.97839 5.65582 9.93789C5.80761 9.83074 9.37917 7.29046 9.37917 3.92872C9.37799 2.88712 8.9637 1.88852 8.22717 1.152C7.49065 0.415479 6.49205 0.00118162 5.45045 0ZM5.45045 2.5001C5.73301 2.5001 6.00922 2.58388 6.24415 2.74086C6.47909 2.89784 6.6622 3.12096 6.77033 3.38201C6.87846 3.64306 6.90675 3.93031 6.85163 4.20744C6.7965 4.48456 6.66044 4.73912 6.46064 4.93892C6.26085 5.13871 6.00629 5.27478 5.72916 5.3299C5.45204 5.38502 5.16479 5.35673 4.90374 5.2486C4.64269 5.14047 4.41957 4.95736 4.26259 4.72243C4.10561 4.48749 4.02182 4.21128 4.02182 3.92872C4.02182 3.54983 4.17234 3.18645 4.44026 2.91853C4.70818 2.65061 5.07156 2.5001 5.45045 2.5001Z"
-                                                        fill="#AEB9E1" />
+                                        Product
+                                    </th>
+                                    <th scope="col" class="sticky top-0 p-3 text-center text-white">
+                                        <span class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="13" height="12"
+                                                viewBox="0 0 13 12" fill="none">
+                                                <g clip-path="url(#clip0_37_453)">
+                                                    <mask id="mask0_37_453" style="mask-type:luminance"
+                                                        maskUnits="userSpaceOnUse" x="0" y="0" width="13" height="12">
+                                                        <path d="M12.22 0H0.219971V12H12.22V0Z" fill="white" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_37_453)">
+                                                        <path
+                                                            d="M9.75462 1.87891H2.68506C2.13277 1.87891 1.68506 2.32662 1.68506 2.87891V10C1.68506 10.5523 2.13277 11 2.68506 11H9.75462C10.3069 11 10.7546 10.5523 10.7546 10V2.87891C10.7546 2.32662 10.3069 1.87891 9.75462 1.87891Z"
+                                                            stroke="#AEB9E1" />
+                                                        <path
+                                                            d="M1.68506 4.92712H10.7547V9.99925C10.7547 10.5515 10.3069 10.9992 9.75462 10.9992H2.68506C2.13277 10.9992 1.68506 10.5515 1.68506 9.99925V4.92712Z"
+                                                            fill="#AEB9E1" stroke="#AEB9E1" />
+                                                        <path d="M8.73584 1V2.65369" stroke="#AEB9E1"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M3.7749 1V2.65369" stroke="#AEB9E1"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </g>
                                                 </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_37_476">
-                                                    <rect width="10" height="10" fill="white"
-                                                        transform="translate(0.449951)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        Country
-                                    </span>
+                                                <defs>
+                                                    <clipPath id="clip0_37_453">
+                                                        <rect width="12" height="12" fill="white"
+                                                            transform="translate(0.219971)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            Date
+                                        </span>
+                                    </th>
+                                    <th scope="col" class="sticky top-0 p-3 text-center text-white">
+                                        <span class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="11" height="10"
+                                                viewBox="0 0 11 10" fill="none">
+                                                <g clip-path="url(#clip0_37_466)">
+                                                    <mask id="mask0_37_466" style="mask-type:luminance"
+                                                        maskUnits="userSpaceOnUse" x="0" y="0" width="11" height="10">
+                                                        <path d="M10.8401 0H0.840088V10H10.8401V0Z" fill="white" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_37_466)">
+                                                        <path
+                                                            d="M10.0068 0H1.67342C1.45241 0 1.24045 0.0877973 1.08417 0.244078C0.927885 0.400358 0.840088 0.61232 0.840088 0.833333V9.16667C0.840088 9.38768 0.927885 9.59964 1.08417 9.75592C1.24045 9.9122 1.45241 10 1.67342 10H10.0068C10.2278 10 10.4397 9.9122 10.596 9.75592C10.7523 9.59964 10.8401 9.38768 10.8401 9.16667V0.833333C10.8401 0.61232 10.7523 0.400358 10.596 0.244078C10.4397 0.0877973 10.2278 0 10.0068 0ZM8.41821 4.05208L5.36613 6.96875C5.28723 7.04298 5.18279 7.084 5.07447 7.08333C4.96773 7.08374 4.86502 7.04265 4.78801 6.96875L3.26196 5.51042C3.21964 5.47349 3.18522 5.42838 3.16076 5.37781C3.13631 5.32724 3.12234 5.27225 3.11969 5.21614C3.11703 5.16003 3.12575 5.10396 3.14532 5.05131C3.16488 4.99866 3.19489 4.9505 3.23355 4.90974C3.2722 4.86898 3.31869 4.83646 3.37023 4.81413C3.42177 4.79179 3.4773 4.78011 3.53347 4.77979C3.58964 4.77946 3.6453 4.7905 3.69709 4.81223C3.74889 4.83396 3.79576 4.86594 3.83488 4.90625L5.07447 6.08854L7.8453 3.44792C7.92631 3.37723 8.03152 3.3406 8.13891 3.34568C8.24631 3.35077 8.34758 3.39716 8.42157 3.47518C8.49555 3.5532 8.53651 3.65679 8.53588 3.76431C8.53526 3.87182 8.4931 3.97493 8.41821 4.05208Z"
+                                                            fill="#AEB9E1" />
+                                                    </g>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_37_466">
+                                                        <rect width="10" height="10" fill="white"
+                                                            transform="translate(0.840088)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            Status
+                                        </span>
 
-                                </th>
-                                <th scope="col" class="p-3 px-8 text-right text-white">
-                                    Total
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="">
+                                    </th>
+                                    <th scope="col" class="sticky top-0 p-3 text-center text-white">
+                                        <span class="flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="11" height="10"
+                                                viewBox="0 0 11 10" fill="none">
+                                                <g clip-path="url(#clip0_37_476)">
+                                                    <mask id="mask0_37_476" style="mask-type:luminance"
+                                                        maskUnits="userSpaceOnUse" x="0" y="0" width="11" height="10">
+                                                        <path d="M10.45 0H0.449951V10H10.45V0Z" fill="white" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_37_476)">
+                                                        <path
+                                                            d="M5.45045 0C4.40885 0.00118162 3.41025 0.415479 2.67373 1.152C1.93721 1.88852 1.52291 2.88712 1.52173 3.92872C1.52173 7.29046 5.09329 9.83074 5.24509 9.93789C5.30592 9.97839 5.37737 10 5.45045 10C5.52353 10 5.59498 9.97839 5.65582 9.93789C5.80761 9.83074 9.37917 7.29046 9.37917 3.92872C9.37799 2.88712 8.9637 1.88852 8.22717 1.152C7.49065 0.415479 6.49205 0.00118162 5.45045 0ZM5.45045 2.5001C5.73301 2.5001 6.00922 2.58388 6.24415 2.74086C6.47909 2.89784 6.6622 3.12096 6.77033 3.38201C6.87846 3.64306 6.90675 3.93031 6.85163 4.20744C6.7965 4.48456 6.66044 4.73912 6.46064 4.93892C6.26085 5.13871 6.00629 5.27478 5.72916 5.3299C5.45204 5.38502 5.16479 5.35673 4.90374 5.2486C4.64269 5.14047 4.41957 4.95736 4.26259 4.72243C4.10561 4.48749 4.02182 4.21128 4.02182 3.92872C4.02182 3.54983 4.17234 3.18645 4.44026 2.91853C4.70818 2.65061 5.07156 2.5001 5.45045 2.5001Z"
+                                                            fill="#AEB9E1" />
+                                                    </g>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_37_476">
+                                                        <rect width="10" height="10" fill="white"
+                                                            transform="translate(0.449951)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            Country
+                                        </span>
 
-                            <tr class="mainLightBorder-bottom gray-b text-white font-light">
-                                <td class="px-8 py-4 text-left ">
-                                    #1532
-                                </td>
-                                <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
-                                    Residental Proxies
-                                    <br>
-                                    <span class="minHeadClr">2GB</span>
-                                </th>
-                                <td class="px-3 py-4 text-left text-white font-light">
-                                    Jan 30, 2024
-                                </td>
-                                <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
-                                    <span
-                                        class="w-auto flex justify-center items-center bgGreen borderGreen clrGreen text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
-                                        <span class="bgdarkGreen w-1 h-1 rounded-full mr-1"></span>
-                                        Finished</span>
-                                </td>
-                                <td class="px-3 py-4 text-left text-white font-light">
-                                    United States
-                                </td>
+                                    </th>
+                                    <th scope="col" class="sticky top-0 p-3 px-8 text-right text-white">
+                                        Total
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="rightContentInvoiceScroll">
 
-                                <td class="px-8 py-4 text-right text-white font-light">
-                                    $ 1,099.24
-                                </td>
-                            </tr>
-                            <tr class="mainLightBorder-bottom gray-b text-white font-light">
-                                <td class="px-8 py-4 text-left ">
-                                    #1532
-                                </td>
-                                <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
-                                    Residental Proxies
-                                    <br>
-                                    <span class="minHeadClr">2GB</span>
-                                </th>
-                                <td class="px-3 py-4 text-left text-white font-light">
-                                    Jan 30, 2024
-                                </td>
-                                <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
-                                    <span
-                                        class="w-auto flex justify-center items-center bgred borderred clrred text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
-                                        <span class="bgdarkred w-1 h-1 rounded-full mr-1"></span>
-                                        Canceled</span>
-                                </td>
-                                <td class="px-3 py-4 text-left text-white font-light">
-                                    United States
-                                </td>
+                                <tr class=" mainLightBorder-bottom gray-b text-white font-light">
+                                    <td class="px-8 py-4 text-left ">
+                                        #1532
+                                    </td>
+                                    <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
+                                        Residental Proxies
+                                        <br>
+                                        <span class="minHeadClr">2GB</span>
+                                    </th>
+                                    <td class="px-3 py-4 text-left text-white font-light">
+                                        Jan 30, 2024
+                                    </td>
+                                    <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
+                                        <span
+                                            class="w-auto flex justify-center items-center bgGreen borderGreen clrGreen text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
+                                            <span class="bgdarkGreen w-1 h-1 rounded-full mr-1"></span>
+                                            Finished</span>
+                                    </td>
+                                    <td class="px-3 py-4 text-left text-white font-light">
+                                        United States
+                                    </td>
 
-                                <td class="px-8 py-4 text-right text-white font-light">
-                                    $ 1,099.24
-                                </td>
-                            </tr>
-                            <tr class="mainLightBorder-bottom gray-b text-white font-light">
-                                <td class="px-8 py-4 text-left ">
-                                    #1532
-                                </td>
-                                <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
-                                    Residental Proxies
-                                    <br>
-                                    <span class="minHeadClr">2GB</span>
-                                </th>
-                                <td class="px-3 py-4 text-left text-white font-light">
-                                    Jan 30, 2024
-                                </td>
-                                <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
-                                    <span
-                                        class="w-auto flex justify-center items-center bgGreen borderGreen clrGreen text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
-                                        <span class="bgdarkGreen w-1 h-1 rounded-full mr-1"></span>
-                                        Finished</span>
-                                </td>
-                                <td class="px-3 py-4 text-left text-white font-light">
-                                    United States
-                                </td>
+                                    <td class="px-8 py-4 text-right text-white font-light">
+                                        $ 1,099.24
+                                    </td>
+                                </tr>
+                                <tr class=" mainLightBorder-bottom gray-b text-white font-light">
+                                    <td class="px-8 py-4 text-left ">
+                                        #1532
+                                    </td>
+                                    <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
+                                        Residental Proxies
+                                        <br>
+                                        <span class="minHeadClr">2GB</span>
+                                    </th>
+                                    <td class="px-3 py-4 text-left text-white font-light">
+                                        Jan 30, 2024
+                                    </td>
+                                    <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
+                                        <span
+                                            class="w-auto flex justify-center items-center bgred borderred clrred text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
+                                            <span class="bgdarkred w-1 h-1 rounded-full mr-1"></span>
+                                            Canceled</span>
+                                    </td>
+                                    <td class="px-3 py-4 text-left text-white font-light">
+                                        United States
+                                    </td>
 
-                                <td class="px-8 py-4 text-right text-white font-light">
-                                    $ 1,099.24
-                                </td>
-                            </tr>
-                            <tr class="mainLightBorder-bottom gray-b text-white font-light">
-                                <td class="px-8 py-4 text-left ">
-                                    #1532
-                                </td>
-                                <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
-                                    Residental Proxies
-                                    <br>
-                                    <span class="minHeadClr">2GB</span>
-                                </th>
-                                <td class="px-3 py-4 text-left text-white font-light">
-                                    Jan 30, 2024
-                                </td>
-                                <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
-                                    <span
-                                        class="w-auto flex justify-center items-center bgyellow borderyellow clryellow text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
-                                        <span class="bgdarkyellow w-1 h-1 rounded-full mr-1"></span>
-                                        Finished</span>
-                                </td>
-                                <td class="px-3 py-4 text-left text-white font-light">
-                                    United States
-                                </td>
+                                    <td class="px-8 py-4 text-right text-white font-light">
+                                        $ 1,099.24
+                                    </td>
+                                </tr>
+                                <tr class=" mainLightBorder-bottom gray-b text-white font-light">
+                                    <td class="px-8 py-4 text-left ">
+                                        #1532
+                                    </td>
+                                    <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
+                                        Residental Proxies
+                                        <br>
+                                        <span class="minHeadClr">2GB</span>
+                                    </th>
+                                    <td class="px-3 py-4 text-left text-white font-light">
+                                        Jan 30, 2024
+                                    </td>
+                                    <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
+                                        <span
+                                            class="w-auto flex justify-center items-center bgGreen borderGreen clrGreen text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
+                                            <span class="bgdarkGreen w-1 h-1 rounded-full mr-1"></span>
+                                            Finished</span>
+                                    </td>
+                                    <td class="px-3 py-4 text-left text-white font-light">
+                                        United States
+                                    </td>
 
-                                <td class="px-8 py-4 text-right text-white font-light">
-                                    $ 1,099.24
-                                </td>
-                            </tr>
-                            <tr class="mainLightBorder-bottom gray-b text-white font-light">
-                                <td class="px-8 py-4 text-left ">
-                                    #1532
-                                </td>
-                                <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
-                                    Residental Proxies
-                                    <br>
-                                    <span class="minHeadClr">2GB</span>
-                                </th>
-                                <td class="px-3 py-4 text-left text-white font-light">
-                                    Jan 30, 2024
-                                </td>
-                                <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
-                                    <span
-                                        class="w-auto flex justify-center items-center bgred borderred clrred text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
-                                        <span class="bgdarkred w-1 h-1 rounded-full mr-1"></span>
-                                        Canceled</span>
-                                </td>
-                                <td class="px-3 py-4 text-left text-white font-light">
-                                    United States
-                                </td>
+                                    <td class="px-8 py-4 text-right text-white font-light">
+                                        $ 1,099.24
+                                    </td>
+                                </tr>
+                                <tr class=" mainLightBorder-bottom gray-b text-white font-light">
+                                    <td class="px-8 py-4 text-left ">
+                                        #1532
+                                    </td>
+                                    <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
+                                        Residental Proxies
+                                        <br>
+                                        <span class="minHeadClr">2GB</span>
+                                    </th>
+                                    <td class="px-3 py-4 text-left text-white font-light">
+                                        Jan 30, 2024
+                                    </td>
+                                    <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
+                                        <span
+                                            class="w-auto flex justify-center items-center bgyellow borderyellow clryellow text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
+                                            <span class="bgdarkyellow w-1 h-1 rounded-full mr-1"></span>
+                                            Finished</span>
+                                    </td>
+                                    <td class="px-3 py-4 text-left text-white font-light">
+                                        United States
+                                    </td>
 
-                                <td class="px-8 py-4 text-right text-white font-light">
-                                    $ 1,099.24
-                                </td>
-                            </tr>
-                            <tr class="gray-b text-white font-light">
-                                <td class="px-8 py-4 text-left ">
-                                    #1532
-                                </td>
-                                <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
-                                    Residental Proxies
-                                    <br>
-                                    <span class="minHeadClr">2GB</span>
-                                </th>
-                                <td class="px-3 py-4 text-left text-white font-light">
-                                    Jan 30, 2024
-                                </td>
-                                <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
-                                    <span
-                                        class="w-auto flex justify-center items-center bgGreen borderGreen clrGreen text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
-                                        <span class="bgdarkGreen w-1 h-1 rounded-full mr-1"></span>
-                                        Finished</span>
-                                </td>
-                                <td class="px-3 py-4 text-left text-white font-light">
-                                    United States
-                                </td>
+                                    <td class="px-8 py-4 text-right text-white font-light">
+                                        $ 1,099.24
+                                    </td>
+                                </tr>
+                                <tr class=" mainLightBorder-bottom gray-b text-white font-light">
+                                    <td class="px-8 py-4 text-left ">
+                                        #1532
+                                    </td>
+                                    <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
+                                        Residental Proxies
+                                        <br>
+                                        <span class="minHeadClr">2GB</span>
+                                    </th>
+                                    <td class="px-3 py-4 text-left text-white font-light">
+                                        Jan 30, 2024
+                                    </td>
+                                    <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
+                                        <span
+                                            class="w-auto flex justify-center items-center bgred borderred clrred text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
+                                            <span class="bgdarkred w-1 h-1 rounded-full mr-1"></span>
+                                            Canceled</span>
+                                    </td>
+                                    <td class="px-3 py-4 text-left text-white font-light">
+                                        United States
+                                    </td>
 
-                                <td class="px-8 py-4 text-right text-white font-light">
-                                    $ 1,099.24
-                                </td>
-                            </tr>
+                                    <td class="px-8 py-4 text-right text-white font-light">
+                                        $ 1,099.24
+                                    </td>
+                                </tr>
+                                <tr class=" gray-b text-white font-light">
+                                    <td class="px-8 py-4 text-left ">
+                                        #1532
+                                    </td>
+                                    <th scope="row" class="px-3 py-4 block font-medium text-white dark:text-white">
+                                        Residental Proxies
+                                        <br>
+                                        <span class="minHeadClr">2GB</span>
+                                    </th>
+                                    <td class="px-3 py-4 text-left text-white font-light">
+                                        Jan 30, 2024
+                                    </td>
+                                    <td class="w-5 h-2 px-3 py-4 text-white font-light pillFinished">
+                                        <span
+                                            class="w-auto flex justify-center items-center bgGreen borderGreen clrGreen text-xs font-medium mr-2 px-2.5 py-0.5 rounded-lg">
+                                            <span class="bgdarkGreen w-1 h-1 rounded-full mr-1"></span>
+                                            Finished</span>
+                                    </td>
+                                    <td class="px-3 py-4 text-left text-white font-light">
+                                        United States
+                                    </td>
 
-                        </tbody>
-                    </table>
+                                    <td class="px-8 py-4 text-right text-white font-light">
+                                        $ 1,099.24
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
                 </div>
             </div>
         </div>
