@@ -12,7 +12,8 @@ toggleBox.addEventListener('click', () => {
   const dash3 = document.querySelector('.dash-li-3');
   const dash4 = document.querySelector('.dash-li-4');
   const dash5 = document.querySelector('.dash-li-5');
-
+  const dash6 = document.querySelector('.dash-li-6');
+  
 
   const bottomUserName = document.querySelector('.bottom-user-name');
   // const logoname = document.querySelector('.logoname');
@@ -36,6 +37,7 @@ toggleBox.addEventListener('click', () => {
   dash3.classList.toggle("dash-li-name-show-3");
   dash4.classList.toggle("dash-li-name-show-4");
   dash5.classList.toggle("dash-li-name-show-5");
+  dash6.classList.toggle("dash-li-name-show-6");
 
 
   for (let i = 0; i < spans.length; i++) {
